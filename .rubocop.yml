@@ -1,0 +1,24 @@
+ModuleLength:
+  Exclude:
+    - 'lib/ewallet_core/cores/quenti/*.rb'
+Metrics/MethodLength:
+  Max: 20
+  Exclude:
+    - 'lib/ewallet_core/cores/quenti/*.rb'
+Metrics/AbcSize:
+  Max: 20
+  Exclude:
+    - 'lib/ewallet_core/cores/quenti/*.rb'
+Metrics/ClassLength:
+  Max: 150
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
+    - 'core_validations/**/*.rb'
+    - 'lib/ewallet_core/models/null_object.rb'
+Style/ExpandPathArguments:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
