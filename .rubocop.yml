@@ -22,3 +22,7 @@ Style/ExpandPathArguments:
   Enabled: false
 Style/WordArray:
   Enabled: false
+Style/PercentLiteralDelimiters:
+  Enabled: false
+Style/RescueStandardError:
+  Enabled: false
