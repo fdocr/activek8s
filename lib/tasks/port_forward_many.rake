@@ -1,3 +1,5 @@
+require 'childprocess'
+
 namespace 'k8s' do
   desc 'Port forwards many services from a specific NAMESPACE'
   task :port_forward_many, [:namespace, :first_port, :services] do |_t, args|
