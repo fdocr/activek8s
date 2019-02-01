@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    activek8s (0.2.0)
+    activek8s (0.2.1)
       childprocess (~> 1.0.0)
 
 GEM

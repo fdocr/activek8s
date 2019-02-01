@@ -11,11 +11,11 @@ namespace 'k8s' do
     # Build 'dynamic' values
     services = args.services.split(' ').each_with_index.map do |name, index|
       port = args.first_port.to_i + index
-      export_env = "#{name.upcase}_SERVICE_URL"
+      export_env = "#{name.upcase}_ENDPOINT"
       {
         port: port,
         rake_task: "k8s:port_forward[#{args.namespace},#{name},#{port},3000]",
-        env: "#{export_env}=http://localhost:#{port}/"
+        env: "export #{export_env}=\"http://localhost:#{port}/\""
       }
     end
 
