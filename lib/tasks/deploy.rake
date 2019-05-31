@@ -1,4 +1,4 @@
-namespace 'k8s' do
+namespace 'ak8s' do
   desc 'Deploys the current microservice TAG version on a specific NAMESPACE'
   task :deploy, [:namespace, :tag, :cleanup] do |_t, args|
     puts "ARGS: [#{args.namespace}, #{args.tag}, #{args.cleanup}]" unless ENV['K8S_DEBUG'].nil?

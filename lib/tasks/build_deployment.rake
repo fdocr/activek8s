@@ -1,4 +1,4 @@
-namespace 'k8s' do
+namespace 'ak8s' do
   desc 'Builds the deployment.yml file for execution on a cluster'
   task :build_deployment, [:namespace, :tag] do |_t, args|
     args.with_defaults(namespace: 'dev', tag: 'latest')
