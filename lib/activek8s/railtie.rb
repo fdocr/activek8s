@@ -6,8 +6,10 @@ module Activek8s
       load 'tasks/deploy.rake'
       load 'tasks/delete.rake'
       load 'tasks/port_forward.rake'
-      load 'tasks/port_forward_many.rake'
+      load 'tasks/port_forward_current.rake'
+      load 'tasks/port_forward_service.rake'
       load 'tasks/kibana.rake'
+      load 'tasks/test.rake'
     end
   end
 end
