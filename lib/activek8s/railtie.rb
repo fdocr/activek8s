@@ -9,7 +9,6 @@ module Activek8s
       load 'tasks/port_forward_current.rake'
       load 'tasks/port_forward_service.rake'
       load 'tasks/kibana.rake'
-      load 'tasks/test.rake'
     end
   end
 end
