@@ -11,7 +11,7 @@ namespace 'ak8s' do
 
     # Helper variables setup
     first_port = config.dig('ak8s', 'first_port') || 4200
-    namespaced_services = config[args.namespace]['services']
+    namespaced_services = config[args.namespace]
     raise 'No services listed in .ak8s.yml' if namespaced_services.empty?
 
     # All services to port forward (an array of hashes)
