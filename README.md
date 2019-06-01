@@ -22,7 +22,7 @@ This gem uses a directory named `kube` as a workspace for `deployment.yml`. This
 
 __Activek8s__ performs template-like text substitution on your `deployment.yml` to output a file named `last_deployment.yml`. This `last_deployment.yml` file is the one applied against the currently authenticated Kubernetes cluster (via kubectl). This text substitution is meant for container image name, container image tags and environment management (dev/staging/prod).
 
-#### Directory structure
+### Directory structure
 
 ```
 .
@@ -31,13 +31,13 @@ __Activek8s__ performs template-like text substitution on your `deployment.yml` 
 │   └── deployment.yml
 ```
 
- #### Things you'll need
+### Things you'll need
 
   1. A Kubernetes cluster somewhere
   2. [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) authenticated to that cluster from #1 (if `kubectl get pods -n NAMESPACE` works you're good)
   3. A Dockerized project ready to be deployed on #1 or some other services already deployed to #1
 
-#### Tasks
+### Tasks
 
   * ak8s:deploy
     * Creates a `last_deployment.yml` from `deployment.yml` and applies the YAML specification on the currently authenticated Kubernetes cluster
@@ -86,7 +86,7 @@ ak8s:                         # ak8s is where general config goes
                               # the multiple service port forwarding will start
 ```
 
-#### Port forwarding examples
+### Port forwarding examples
 
 `rake ak8s:port_forward` will port forward all the services listed by name in the 'dev' namespace __because it was listed first__.
 
