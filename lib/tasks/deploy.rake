@@ -5,7 +5,7 @@ namespace 'ak8s' do
 
     deployment_path = ENV['K8S_DEPLOYMENT_FILE'] || 'kube/last_deployment.yml'
     puts "[K8S DEBUG DEPLOYMENT: #{deployment_path}]" unless ENV['K8S_DEBUG'].nil?
-    Rake::Task['k8s:build_deployment'].invoke(args.namespace, args.tag)
+    Rake::Task['ak8s:build_deployment'].invoke(args.namespace, args.tag)
 
     unless ENV['K8S_DEBUG'].nil?
       puts '[K8S DEBUG DEPLOYMENT FILE]'
