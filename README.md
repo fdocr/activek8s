@@ -4,6 +4,15 @@ This gem provides a set of _Rake tasks for a convention based Kubernetes integra
 
 These Rake tasks provide a set of high level customizable commands with sensible defaults. Not everyone in your teams has to be an expert in the Docker/Kubernetes/Ops area to interact with a Kubernetes cluster. __Activek8s__ can help teams working on any project, this isn't a Rails only solution (__not even a Ruby only solution__).
 
+## Contents
+
+  1. [Installation](https://github.com/fdoxyz/activek8s#installation)
+  2. [How it works](https://github.com/fdoxyz/activek8s#how-it-works)
+  3. [.ak8s.yml](https://github.com/fdoxyz/activek8s#ak8syml)
+  4. [Tutorials & Blog posts](https://github.com/fdoxyz/activek8s#)
+  5. [Development, Contributing & License](https://github.com/fdoxyz/activek8s#development)
+  
+
 ## Installation
 
     $ gem install activek8s
@@ -91,6 +100,10 @@ ak8s:                         # ak8s is where general config goes
 `rake ak8s:port_forward` will port forward all the services listed by name in the 'dev' namespace __because it was listed first__.
 
 `rake ak8s:port_forward[staging]` will port forward all the services listed within the staging namespace. In this case the elasticsearch service will be port forwarded using the logging namespace, instead of using the default (which is the corresponding first level key, 'staging' in this case).
+
+## Tutorials & Blog posts
+
+  * [Kubernetes integration with Rake tasks](https://visualcosita.xyz/post/kubernetes-integration-with-rake-tasks/)
 
 ## Development
 
