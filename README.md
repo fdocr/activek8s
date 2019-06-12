@@ -9,7 +9,7 @@ These Rake tasks provide a set of high level customizable commands with sensible
   1. [Installation](https://github.com/fdoxyz/activek8s#installation)
   2. [How it works](https://github.com/fdoxyz/activek8s#how-it-works)
   3. [.ak8s.yml](https://github.com/fdoxyz/activek8s#ak8syml)
-  4. [Tutorials & Blog posts](https://github.com/fdoxyz/activek8s#)
+  4. [Tutorials & Blog posts](https://github.com/fdoxyz/activek8s#tutorials--blog-posts)
   5. [Development, Contributing & License](https://github.com/fdoxyz/activek8s#development)
   
 
@@ -24,6 +24,8 @@ Add this line to your application's Gemfile:
 ```ruby
 gem 'activek8s'
 ```
+
+and execute `bundle install`
 
 ## How it works
 
