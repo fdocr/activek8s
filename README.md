@@ -105,7 +105,7 @@ ak8s:                         # ak8s is where general config goes
 
 ## Tutorials & Blog posts
 
-  * [Kubernetes integration with Rake tasks](https://visualcosita.xyz/post/kubernetes-integration-with-rake-tasks/)
+  * [Kubernetes integration with Rake tasks](https://dev.to/fdoxyz/kubernetes-integration-with-rake-tasks-j0b)
 
 ## Development
 
